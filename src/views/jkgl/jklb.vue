@@ -10,6 +10,7 @@
       <Button type="primary" style="float:right;margin:0 20px;" @click="exprotToExcel">导出EXCEL</Button>
     </Card>
   <Table stripe :columns="col" :data="data" ref="tableExcel"></Table>
+   <Page :total="20" show-elevator show-sizer></Page>
   </div>
 </template>
 
@@ -27,33 +28,68 @@ export default {
           sortable: true,
         },
         {
-          title: "姓名",
+          title: "借款人",
           key: "name",
           sortable: true,
         },
         {
-          title: "住宅地址",
+          title: "借款类型",
           key: "addr"
         },
         {
-          title: "借款类型",
+          title: "借款序号",
           key: "sort",
           sortable: true,
         },
         {
-          title: "学历",
+          title: "借款金额",
           key: "xl",
           sortable: true,
         },
         {
-          title: "工作单位",
+          title: "借款时间",
           key: "gzdw"
         },
         {
-          title: "添加时间",
+          title: "到期时间",
           key: "tjsj",
           sortable: true,
-        }
+        },
+        {
+          title: "借款期限",
+          key: "tjsj",
+          sortable: true,
+        },
+        {
+          title: "已还利息",
+          key: "tjsj",
+          sortable: true,
+        },
+        {
+          title: "总利息",
+          key: "tjsj",
+          sortable: true,
+        },
+        {
+          title: "利率",
+          key: "tjsj",
+          sortable: true,
+        },
+        {
+          title: "手续费",
+          key: "tjsj",
+          sortable: true,
+        },
+        {
+          title: "是否已还",
+          key: "tjsj",
+          sortable: true,
+        },
+        {
+          title: "还款方式",
+          key: "tjsj",
+          sortable: true,
+        },
       ],
       data: [
         {
